@@ -24,7 +24,7 @@ Some of it is a crash on a documented path, like a missing dependency or a flag 
 
 Almost always. In one batch of 25 claims it agreed with all 25, 7 of those as minor. In another batch it agreed with 4 of 5, and the other one was intentional.
 
-That sounds good, but it is not enough. A referee that agrees with everything tells you nothing. So we started to add false claims on purpose. Of 13 of those, the referees rejected 11. One referee did accept 2 of its own 4. I think a referee is only worth something if you check it like that.
+That sounds good, but it is not enough. A referee that agrees with everything tells you nothing. So we started to add false claims on purpose. Of 13 of those, the referees rejected 11. I think a referee is only worth something if you check it like that.
 
 ## What the people who maintain the code care about
 
@@ -42,7 +42,7 @@ Easy: to find the bugs and to check them. A very small input and a separate refe
 
 Hard: to know if the bug matters. For that you need to know who runs the code, on what data, and if a number in a paper came from the part that is broken. We do not know that for any of these.
 
-The code is public and the checks are cheap, so one person with agents can check a lot of it. Finding the bugs is cheap and getting someone to care is the hard part. Nobody can do anything with a bug in code nobody maintains, and the first batch had a few of those in it.
+The code is public and the checks are cheap, so one person with agents can check a lot of it. Nobody can do anything with a bug in code nobody maintains, and the first batch had a few of those in it.
 
 ## What we did not have
 
