@@ -1,6 +1,6 @@
 # Retro
 
-This repo lists 47 bugs in 15 open-source research projects, in R, Python, C, C++ and Perl. AI agents found them in November 2026. A separate referee did the same check from scratch before we listed it, and we told the people who maintain the code first. None of it shows that a number in a paper changed.
+This repo lists 39 bugs in 14 open-source research projects, in R, Python, C and Perl. AI agents found them in November 2026. A separate referee did the same check from scratch before we listed it, and we told the people who maintain the code first. None of it shows that a number in a paper changed.
 
 ## What we did
 
