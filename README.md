@@ -27,6 +27,8 @@ Minor defects are included in the confirmed counts. Reports preserve the limits 
 
 The full rules, and the numbers so far, are in [METHOD.md](METHOD.md). The retro is [RETRO.md](RETRO.md).
 
+Every bug in one file, with its report, reproduction and before/after output copied from the project folders: [PAPER.md](PAPER.md).
+
 1. Hunt for a correctness bug in a pinned upstream version.
 2. An independent referee rebuilds the claim from scratch.
 3. Prepare a patch and a small before/after example.

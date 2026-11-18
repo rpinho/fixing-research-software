@@ -1,0 +1,47 @@
+PAPER.md.cuts: where every new line in PAPER.md and the README link comes from.
+
+Everything else in PAPER.md is copied word for word: the head from README.md (intro, project table
+and "How a bug gets in"), METHOD.md's "Hunt, then an independent referee" section, each project
+folder's README.md, and each repro/<ID>/README.md and RESULTS.txt (named on each "_Source:" line;
+headings one level down, relative links rewritten to repo-root paths, RESULTS.txt in a text fence),
+and the References from README.md's References section.
+No sentence was composed freely. Approved sources are Ricardo's published repo text.
+
+PAPER.md
+- "# research-software-bug-hunt: the full record"
+  <- ai-physics PAPER.md:3 "# ai-physics: the full record" (repo name swapped).
+- "This file puts every bug report in one place, for readers and reviewers who want it in a single
+  document."
+  <- ai-physics PAPER.md:21 "This file puts the full record of every result in one place, for
+     readers and reviewers who want it in a single document." ("the full record of every result"
+     -> "every bug report").
+- "Each section below is copied word for word from the project's own folder in this repository: the
+  bugs and their fixes, how to run each reproduction, and its before/after output."
+  <- ai-physics PAPER.md:21 "Each section below is copied word for word from the result's own folder
+     in this repository:"; README.md:34 "Prepare a patch and a small before/after example";
+     project READMEs (e.g. borenstein-lab-MUSiCC/README.md:7 "Run `sh repro/<ID>/run.sh`");
+     connectors "the bugs and their fixes", "how to run each".
+- Section headings: the project names in README.md's table, verbatim. Order: projects with upstream
+  PRs first (only pyglmnet has any), then README table order.
+- File labels "Report", "Reproduction: <ID>", "Before and after: <ID>" <- file names and README.md:34
+  "before/after".
+- "Upstream pull requests, state on GitHub on November 18, 2026:" + table
+  <- METHOD.md:34 "Upstream PRs opened"; connectors "state on GitHub on". States read live with
+     gh pr view on 2026-11-18: #399 MERGED 2026-11-08, #401 MERGED 2026-11-08, #400 OPEN.
+- "A separate referee's verdicts." (link to ai-biology friends/hugo-fernandes-pyglmnet/referee/VERDICTS.md)
+  <- ai-biology README.md:54 "a separate referee's [verdicts](...)", verbatim.
+
+README.md
+- "Every bug in one file, with its report, reproduction and before/after output copied from the
+  project folders: PAPER.md."
+  <- ai-physics README.md:11 "Every result in one file, with its claim, derivation, checks and
+     verdict copied from the result folders: [PAPER.md](PAPER.md)." ("result" -> "bug";
+     "claim, derivation, checks and verdict" -> "report, reproduction and before/after output",
+     from README.md:34; "result folders" -> "project folders"). Placed as in ai-physics: its own
+     paragraph right after the retro link.
+
+Upstream pull requests section (added by the open-source lane session, 11-18):
+- Generated from ai-biology/tools/bio_prs.tsv with each PR's title, state and URL read live from the GitHub API
+  on 2026-11-18. Titles are the PRs' own titles. Close reasons quote the maintainers' own comments on each PR
+  (rowan-python#19 jevandezande, sunpy#8919 hayesla, Perceval#807 Aubaert) or summarize astropy's bot comment
+  and its published AI policy. The two framing sentences are plain statements of counts and where the live table is.
