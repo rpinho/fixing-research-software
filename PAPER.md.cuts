@@ -39,9 +39,3 @@ README.md
      "claim, derivation, checks and verdict" -> "report, reproduction and before/after output",
      from README.md:34; "result folders" -> "project folders"). Placed as in ai-physics: its own
      paragraph right after the retro link.
-
-Upstream pull requests section (added by the open-source lane session, 11-18):
-- Generated from ai-biology/tools/bio_prs.tsv with each PR's title, state and URL read live from the GitHub API
-  on 2026-11-18. Titles are the PRs' own titles. Close reasons quote the maintainers' own comments on each PR
-  (rowan-python#19 jevandezande, sunpy#8919 hayesla, Perceval#807 Aubaert) or summarize astropy's bot comment
-  and its published AI policy. The two framing sentences are plain statements of counts and where the live table is.
