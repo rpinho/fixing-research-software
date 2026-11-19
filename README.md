@@ -4,7 +4,7 @@
 
 AI agents look for correctness bugs in open-source research software. A separate referee rebuilds each claim from scratch. Only bugs the referee confirms are listed here. Each bug was reported to the authors before it appears here.
 
-This is the one place for our work on other people's research code: the refereed bug reports in the table below, and every pull request we opened, grouped by field, in [Pull requests](#pull-requests), and small tools we built in [Tools we built](#tools-we-built). The name follows Valerio Capraro's [Fixing humanity's scientific knowledge](https://x.com/ValerioCapraro/status/2123070148743512573) project, which uses AI agents to review and correct published papers. This repo is about the code those papers depend on.
+This is the one place for my work on other people's research code: the refereed bug reports in the table below, every pull request I opened, grouped by field, in [Pull requests](#pull-requests), and small tools I built in [Tools I built](#tools-i-built). The name follows Valerio Capraro's [Fixing humanity's scientific knowledge](https://x.com/ValerioCapraro/status/2123070148743512573) project, which uses AI agents to review and correct published papers. This repo is about the code those papers depend on.
 
 | Project | Language | Pinned version or commit | Bugs confirmed | Minor | Status |
 |---|---|---|---:|---:|---|
@@ -27,7 +27,7 @@ Minor defects are included in the confirmed counts. Reports preserve the limits 
 
 ## Pull requests
 
-Every pull request we opened on someone else's research code, rendered from the GitHub API by `tools/render_prs.py` and refreshed daily. Bug fixes were confirmed by a referee from a different model family, with a test that fails before the fix; speedups were checked for identical outputs. "Replies" counts maintainers' comments and reviews, not bots.
+Every pull request I opened on someone else's research code, rendered from the GitHub API by `tools/render_prs.py` and refreshed daily. Bug fixes were confirmed by a referee from a different model family, with a test that fails before the fix; speedups were checked for identical outputs. "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:prs -->
 229 PRs to 61 repositories: 25 merged, 185 open, 19 closed.
@@ -297,12 +297,12 @@ Every pull request we opened on someone else's research code, rendered from the 
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#622](https://github.com/robocurve/inspect-robots/pull/622) | speedup | HTML report scans the frame directory once (16x faster, byte-identical) | open |
 <!-- /auto -->
 
-## Tools we built
+## Tools I built
 
-Small libraries and pipelines built around the code we fix.
+Small libraries and pipelines built around the code I fix.
 
 - [nudged-elastic-band](https://github.com/rpinho/nudged-elastic-band): climbing-image nudged elastic band in plain NumPy, MIT. It answers the NEB item on Rowan's [open-source projects we wish existed](https://www.rowansci.com/blog/open-source-projects-we-wish-existed). It matches ASE's improved-tangent CI-NEB + FIRE step for step. On 23 Baker25 reactions with GFN2-xTB, an independent referee verified a transition state for 7, the same 7 as ASE.
-- [lab-instrument-data-pipeline](https://github.com/rpinho/lab-instrument-data-pipeline): a small pipeline on real public instrument files (flow cytometry, a plate reader, nanopore plasmid reads and OME-Zarr imaging), with lineage from every measurement to its raw bytes and five hands-on exercises. Its references link the parser fixes we sent upstream.
+- [lab-instrument-data-pipeline](https://github.com/rpinho/lab-instrument-data-pipeline): a small pipeline on real public instrument files (flow cytometry, a plate reader, nanopore plasmid reads and OME-Zarr imaging), with lineage from every measurement to its raw bytes and five hands-on exercises. Its references link the parser fixes I sent upstream.
 
 ## How a bug gets in
 
