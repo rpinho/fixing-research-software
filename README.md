@@ -4,7 +4,7 @@
 
 AI agents look for correctness bugs in open-source research software. A separate referee rebuilds each claim from scratch. Only bugs the referee confirms are listed here. Each bug was reported to the authors before it appears here.
 
-This is the one place for our work on other people's research code: the refereed bug reports in the table below, and every pull request we opened, grouped by field, in [Pull requests](#pull-requests). The name follows Valerio Capraro's [Fixing humanity's scientific knowledge](https://x.com/ValerioCapraro/status/2123070148743512573) project, which uses AI agents to review and correct published papers. This repo is about the code those papers depend on.
+This is the one place for our work on other people's research code: the refereed bug reports in the table below, and every pull request we opened, grouped by field, in [Pull requests](#pull-requests), and small tools we built in [Tools we built](#tools-we-built). The name follows Valerio Capraro's [Fixing humanity's scientific knowledge](https://x.com/ValerioCapraro/status/2123070148743512573) project, which uses AI agents to review and correct published papers. This repo is about the code those papers depend on.
 
 | Project | Language | Pinned version or commit | Bugs confirmed | Minor | Status |
 |---|---|---|---:|---:|---|
@@ -296,6 +296,12 @@ Every pull request we opened on someone else's research code, rendered from the 
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#618](https://github.com/robocurve/inspect-robots/pull/618) | bug fix | Trial artifacts stay separate for scene IDs that differ only in case | open |
 | [robocurve/inspect-robots](https://github.com/robocurve/inspect-robots) | [#622](https://github.com/robocurve/inspect-robots/pull/622) | speedup | HTML report scans the frame directory once (16x faster, byte-identical) | open |
 <!-- /auto -->
+
+## Tools we built
+
+Small libraries for problems people asked for in public.
+
+- [nudged-elastic-band](https://github.com/rpinho/nudged-elastic-band): climbing-image nudged elastic band in plain NumPy, MIT. It answers the NEB item on Rowan's [open-source projects we wish existed](https://www.rowansci.com/blog/open-source-projects-we-wish-existed). It matches ASE's improved-tangent CI-NEB + FIRE step for step. On 23 Baker25 reactions with GFN2-xTB, an independent referee verified a transition state for 7, the same 7 as ASE.
 
 ## How a bug gets in
 
