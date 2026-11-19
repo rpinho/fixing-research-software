@@ -302,7 +302,7 @@ Every pull request we opened on someone else's research code, rendered from the 
 Small libraries and pipelines built around the code we fix.
 
 - [nudged-elastic-band](https://github.com/rpinho/nudged-elastic-band): climbing-image nudged elastic band in plain NumPy, MIT. It answers the NEB item on Rowan's [open-source projects we wish existed](https://www.rowansci.com/blog/open-source-projects-we-wish-existed). It matches ASE's improved-tangent CI-NEB + FIRE step for step. On 23 Baker25 reactions with GFN2-xTB, an independent referee verified a transition state for 7, the same 7 as ASE.
-- [lab-instrument-data-pipeline](https://github.com/rpinho/lab-instrument-data-pipeline): a small pipeline on real public instrument files (flow cytometry, a plate reader, nanopore plasmid reads and OME-Zarr imaging), with lineage from every measurement to its raw bytes and five hands-on exercises. It uses the parsers we fixed upstream.
+- [lab-instrument-data-pipeline](https://github.com/rpinho/lab-instrument-data-pipeline): a small pipeline on real public instrument files (flow cytometry, a plate reader, nanopore plasmid reads and OME-Zarr imaging), with lineage from every measurement to its raw bytes and five hands-on exercises. Its references link the parser fixes we sent upstream.
 
 ## How a bug gets in
 
