@@ -1,0 +1,230 @@
+# repo<TAB>PR<TAB>field<TAB>type (bug fix | speedup | tests/CI | tool)<TAB>one-line description. tools/render_prs.py fills status from the GitHub API.
+adaptyvbio/protein-design-skills	10	biology	bug fix	The UniProt skill's PDB helper puts the chains, not the resolution, in its chains field
+adaptyvbio/protein-design-skills	11	biology	bug fix	The setup check uses modal token info, since modal token show does not exist
+adrn/gala	680	physics and astronomy	bug fix	Preserve mock stream metadata through HDF5
+adrn/gala	681	physics and astronomy	bug fix	Honor the median option for Staeckel focal lengths
+adrn/gala	682	physics and astronomy	bug fix	Use elapsed time in fast Lyapunov estimates
+adrn/gala	683	physics and astronomy	bug fix	Use the toy potential time unit when fitting O2GF frequencies
+adrn/gala	684	physics and astronomy	speedup	Use matrix products for O2GF mode sums
+Arcadia-Science/agentic-pymol	18	biology	bug fix	get_model works against real PyMOL (Indexed was imported from the wrong module)
+Arcadia-Science/agentic-pymol	19	biology	bug fix	Relative file paths are resolved by PyMOL, as documented, not by the MCP server
+Arcadia-Science/agentic-pymol	21	biology	bug fix	types: drop slots from tool result dataclasses so FastMCP publishes output schemas
+Arcadia-Science/glass-box-umap	34	biology	bug fix	Float64 Tensor input works in transform and compute_contributions, like NumPy input
+Arcadia-Science/glass-box-umap	35	biology	tool	py.typed marker so type checkers use the package's annotations (issue #18)
+ArcInstitute/cell-eval	248	biology	bug fix	score_agg_metrics works when one normalization group is empty
+ArcInstitute/cell-eval	249	biology	bug fix	Pipeline metric settings no longer leak into other pipelines' defaults
+ArcInstitute/cell-eval	250	biology	speedup	sparse pseudobulk and centroids without densifying (3x faster, 4.8x less memory)
+ArcInstitute/evo2	236	biology	bug fix	An interrupted shard merge no longer leaves a truncated checkpoint that later loads accept
+ArcInstitute/state	283	biology	bug fix	Gene mapping uses the detected gene-name column, so genes named only there aren't dropped
+astropy/astropy	20894	physics and astronomy	bug fix	Fix sigma_clip rejection masks for Quantity input
+astropy/astropy	20895	physics and astronomy	bug fix	Honor zero sigma bounds in SigmaClip
+astropy/astropy	20896	physics and astronomy	bug fix	Fix array indexing of scalar Distribution
+bioio-devs/bioio	236	biology	bug fix	bugfix/preserve-xarray-metadata
+biotite-dev/biotite	1037	biology	bug fix	Fix `check_in_box()` returning atoms inside the box
+biotite-dev/biotite	1038	biology	bug fix	Reject GRO stacks with unequal model lengths
+biotite-dev/biotite	1039	biology	bug fix	Fix GFF annotation grouping for discontinuous features
+biotite-dev/biotite	1040	biology	bug fix	Fix `to_sequence()` chain selection for atom array stacks
+California-Planet-Search/radvel	464	physics and astronomy	bug fix	Preserve the source basis when converting parameters
+California-Planet-Search/radvel	465	physics and astronomy	bug fix	Use configured planet letters in dict-based fits
+California-Planet-Search/radvel	466	physics and astronomy	bug fix	Keep the optimizer's returned fit parameters
+California-Planet-Search/radvel	467	physics and astronomy	bug fix	Honor fixed jitter in information-criterion comparisons
+California-Planet-Search/radvel	468	physics and astronomy	bug fix	Sort celerite observation times before initializing the kernel
+chaidiscovery/chai-lab	437	biology	bug fix	Merging A3M files from the same database keeps every file's hits
+chaidiscovery/chai-lab	438	biology	bug fix	Template lookup keeps chain names like 001 or NA as strings
+daler/pybedtools	434	biology	bug fix	preserve input rows when indexing presorted files
+daler/pybedtools	435	biology	bug fix	fix generator completion in randomstats
+daler/pybedtools	436	biology	bug fix	accept pathlib paths in intersection database lists
+daler/pybedtools	437	biology	bug fix	preserve mate position 1 when iterating over BAM
+daler/pybedtools	438	biology	speedup	count BAM and CRAM records without converting intervals
+deeptools/deepTools	1502	biology	bug fix	fix: keep computeMatrix groups distinct when filenames match
+deeptools/deepTools	1503	biology	bug fix	fix: apply zero thresholds in computeMatrix
+deeptools/deepTools	1504	biology	bug fix	fix: score singleton and two-row heatmap clusters correctly
+deeptools/deepTools	1505	biology	bug fix	fix: preserve missing signal when clustering heatmaps
+deeptools/deepTools	1506	biology	bug fix	fix: write final zero-valued bigwigCompare intervals
+deeptools/deepTools	1507	biology	speedup	perf: average bigWig coverage bins in NumPy
+dfm/corner.py	355	physics and astronomy	bug fix	Fix linestyle aliases in overplot_points
+dfm/corner.py	356	physics and astronomy	bug fix	Restore variable selection with ArviZ 1.x
+dfm/corner.py	357	physics and astronomy	bug fix	Align divergence markers with selected coordinates
+dfm/emcee	588	physics and astronomy	bug fix	fix: keep autocorrelation error estimates in original steps
+EdisonScientific/labbench2	45	biology	bug fix	Leading-decimal answers like `.701` keep their value when graded
+EdisonScientific/labbench2	46	biology	bug fix	Report summaries keep metrics whose scores are all 0
+EdisonScientific/labbench2	48	biology	bug fix	custom runner outputs crash after generation (OSError)
+EdisonScientific/labbench2	49	biology	bug fix	--retry-from ignores the original agent/mode; merges mix configurations
+EdisonScientific/labbench2	50	biology	bug fix	Grade plain Wallace-rule answers with the Wallace formula
+EdisonScientific/labbench2	51	biology	bug fix	Use the attached Km unit for catalytic efficiency scoring
+exoplanet-dev/celerite2	208	physics and astronomy	bug fix	Include GP means in PyMC and NumPyro samples
+exoplanet-dev/celerite2	209	physics and astronomy	bug fix	Return negative infinity after quiet factorization failures
+exoplanet-dev/celerite2	210	physics and astronomy	bug fix	Handle PyMC marginal sample sizes
+exoplanet-dev/celerite2	211	physics and astronomy	bug fix	Reallocate non-owning workspaces after pickling
+eyurtsev/fcsparser	81	biology	bug fix	Fix the ANALYSIS segment end offset
+Future-House/aviary	393	general tools	bug fix	Tool servers build for tools with list parameters (JSON Schema "array")
+Future-House/aviary	394	general tools	bug fix	Tool servers pass a parameter's declared default when the request leaves it out
+Future-House/paper-qa	1373	general tools	bug fix	Text parsing compares page_size_limit with each line's length, not the line count
+Future-House/paper-qa	1374	general tools	bug fix	Rebuilding an index with use_absolute_paper_directory keeps unchanged documents
+Future-House/paper-qa	1375	general tools	speedup	reuse NumpyVectorStore matrix and norms across retrievals (70x warm, bit-identical)
+glm-tools/pyglmnet	399	general tools	bug fix	FIX: Bernoulli log likelihood is NaN at probabilities 0 and 1, and overflows for large logits
+glm-tools/pyglmnet	400	general tools	bug fix	FIX: gamma deviance and pseudo-R2 omit the saturated log likelihood
+glm-tools/pyglmnet	401	general tools	bug fix	FIX: simulate_glm(sample=True) for gamma returns exp(mu) instead of gamma samples
+healpy/healpy	1152	physics and astronomy	bug fix	Fix mmax handling in harmonic_ud_grade
+healpy/healpy	1153	physics and astronomy	bug fix	Fix string column names in write_map
+healpy/healpy	1154	physics and astronomy	bug fix	Fix ud_grade averaging with non-finite pixels
+joshspeagle/dynesty	529	physics and astronomy	bug fix	fix iteration count for stopped merged runs
+joshspeagle/dynesty	530	physics and astronomy	bug fix	fix information for zero reweighting factors
+joshspeagle/dynesty	531	physics and astronomy	bug fix	fix strand IDs when merging independent runs
+latchbio/latch	624	biology	bug fix	Glob patterns match the whole file name (`*.fq` no longer matches `a.fq.gz`)
+latchbio/latch	625	biology	bug fix	`generate-metadata` handles nf-core schema patterns that crashed it (55 to 124 of 146 pipelines)
+latchbio/latch	626	biology	bug fix	launch: send false Nextflow flags and pick the File/Dir union variant by type
+latchbio/latch	627	biology	bug fix	file_glob: put a slash between remote_directory and the file name
+latchbio/scbench	8	biology	bug fix	scbench batch skips evals/manifest.json instead of counting it as a failed eval
+levitsky/pyteomics	238	biology	bug fix	Write MGF retention-time ranges
+levitsky/pyteomics	239	biology	bug fix	Apply fixed ProForma modifications at the specified terminus
+levitsky/pyteomics	240	biology	bug fix	Check spectrum IDs in MzMLb membership tests
+levitsky/pyteomics	241	biology	bug fix	Use the charge state passed to ProForma.composition
+levitsky/pyteomics	242	biology	bug fix	Keep PSM identities when streaming FDR-filtered results
+levitsky/pyteomics	243	biology	speedup	Reuse log-factorials in q-value correction
+lightkurve/lightkurve	1595	physics and astronomy	bug fix	Fixed local FITS time units for reordered columns
+lightkurve/lightkurve	1596	physics and astronomy	bug fix	Fixed stitching light curves with different time formats
+lmfit/lmfit-py	1068	general tools	bug fix	FIX: use component prefixes in eval_uncertainty
+lmfit/lmfit-py	1069	general tools	bug fix	FIX: handle sequence inputs with nan_policy='omit'
+lmfit/lmfit-py	1070	general tools	bug fix	FIX: preserve directories when loading saved models from Paths
+LSSTDESC/CCL	1329	physics and astronomy	bug fix	Reject negative neutrino masses
+LSSTDESC/CCL	1330	physics and astronomy	bug fix	Fix comoving volume in curved cosmologies
+LSSTDESC/CCL	1331	physics and astronomy	bug fix	Include fc_bar in Duffy08 equality and representation
+LSSTDESC/CCL	1332	physics and astronomy	bug fix	Fix fourth-profile bias in the two-halo trispectrum
+materialsproject/pymatgen	4787	materials and chemistry	speedup	ZSLGenerator: cache super-lattice reductions, vectorize match check (3.3-4.8x, byte-identical)
+materialsproject/pymatgen	4788	materials and chemistry	bug fix	Fix GibbsComputedStructureEntry.from_dict for entries with a correction
+materialsproject/pymatgen	4789	materials and chemistry	bug fix	Fix QuasiRRHO free-rotor interpolation using vibrational temperatures instead of wavenumbers
+materialsproject/pymatgen	4790	materials and chemistry	bug fix	Fix MagneticStructureEnumerator crash when the ferromagnetic strategy is not used
+materialsproject/pymatgen	4791	materials and chemistry	bug fix	Fix get_plot and plot_structures with two_theta_range=None
+materialsproject/pymatgen	4792	materials and chemistry	bug fix	Fix XAS.stitch in XAFS mode when called on the EXAFS spectrum
+materialsproject/pymatgen	4793	materials and chemistry	bug fix	Normalize data["volume"] per formula unit in InsertionVoltagePair
+materialsproject/pymatgen	4794	materials and chemistry	bug fix	Fix get_dimensionality_cheon modifying the input structure when standardize=False
+materialsproject/pymatgen	4795	materials and chemistry	bug fix	Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True
+mdtraj/mdtraj	2236	biology	bug fix	Resolve mmCIF connections using label identifiers
+mdtraj/mdtraj	2237	biology	bug fix	Apply atom selection after reading ARC topology
+mdtraj/mdtraj	2238	biology	bug fix	Continue default XTC and TRR frame numbers across writes
+mdtraj/mdtraj	2239	biology	bug fix	Restore integral bond orders when reading HDF5 topology
+mdtraj/mdtraj	2240	biology	bug fix	Use written atom serials in PDB CONECT records
+mdtraj/mdtraj	2241	biology	speedup	Build and reduce contact distance groups in bulk
+MultiQC/MultiQC	3736	biology	bug fix	A module set only in top_modules no longer runs a second time on all logs
+MultiQC/MultiQC	3738	biology	bug fix	Fix grouped sample values in get_general_stats_data
+MultiQC/MultiQC	3739	biology	bug fix	Fix module and data-key selection in get_module_data
+MultiQC/MultiQC	3740	biology	bug fix	Preserve section order when merging parquet reports
+nf-core/tools	4619	biology	bug fix	create-params-file includes parameters defined at the schema's top level
+nf-core/tools	4620	biology	bug fix	Schema build keeps 0 and 0.0 defaults from the pipeline config
+nipy/nibabel	1637	biology	bug fix	BF: Use output position when slicing frames of an ECAT array proxy
+nipy/nibabel	1638	biology	bug fix	BF: Read AFNI complex sub-bricks as complex64
+nipy/nibabel	1639	biology	bug fix	BF: Reverse slice timing when reorientation flips the slice axis
+nipy/nibabel	1640	biology	speedup	ENH: Write TCK streamlines in blocks when no affine needs applying
+nipy/nibabel	1641	biology	bug fix	BF: Accept MGH files with an intent code in the version field
+nipy/nibabel	1642	biology	bug fix	BF: Align annotation names with colour table rows when entries are missing
+nipy/nibabel	1643	biology	bug fix	BF: Reshape GIFTI MatrixData to 4x4 when values are on one line
+NVIDIA-BioNeMo/bionemo-recipes	1802	biology	bug fix	ESM-2 PEFT validation packing uses val_micro_batch_size
+open2c/cooler	544	biology	bug fix	Apply divisive weights in cooler dump
+open2c/cooler	545	biology	bug fix	Write the dump header for empty queries
+open2c/cooler	546	biology	bug fix	Decode contig names in joined pixels
+open2c/cooler	547	biology	speedup	Read the row index for the queried matrix range
+openmc-dev/openmc	4240	physics and astronomy	bug fix	Reshape each mesh filter along its expanded axes
+openmc-dev/openmc	4241	physics and astronomy	bug fix	Read matrix rotations from mesh filters through the C API
+openmc-dev/openmc	4242	physics and astronomy	bug fix	Scale shared mesh sources once when setting total strength
+openmc-dev/openmc	4243	physics and astronomy	bug fix	Preserve mesh identity and transformations when comparing filters
+phonopy/phonopy	1118	materials and chemistry	bug fix	Fix empty arguments in deprecated option name handling
+phonopy/phonopy	1119	materials and chemistry	bug fix	Fix loading YAML with a NumPy primitive matrix
+phonopy/phonopy	1120	materials and chemistry	bug fix	Preserve symbol distinction when replicating Phonopy
+phonopy/phonopy	1121	materials and chemistry	speedup	Speed up thermal displacements by batching mode populations
+pybamm-team/PyBaMM	6070	materials and chemistry	bug fix	fix: preserve skip_ok on repeated experiment steps
+pybamm-team/PyBaMM	6072	materials and chemistry	bug fix	fix: keep EIS input ordering stable across solves
+pybamm-team/PyBaMM	6073	materials and chemistry	bug fix	fix: search experiment tags with string steps
+pymc-devs/pymc	8643	general tools	bug fix	Fix MultiTrace slicing counts and negative strides
+pymc-devs/pymc	8644	general tools	bug fix	Initialize variational groups in their variable order
+pymc-devs/pymc	8645	general tools	bug fix	Preserve dimension names in ZarrTrace without coordinate labels
+pymc-devs/pymc	8646	general tools	bug fix	Flatten start_sigma arrays when initializing ADVI
+pyranges/pyranges0	413	biology	bug fix	Preserve strandedness after a DataFrame round trip
+pyranges/pyranges0	414	biology	bug fix	Respect as_df and nrows when reading GTF with full=False
+pyranges/pyranges1	216	biology	bug fix	Honor grouping columns in overlap counts
+pyranges/pyranges1	217	biology	bug fix	Preserve VCF filter status
+pyro-ppl/numpyro	2440	general tools	bug fix	fix(infer): reject scanned sample sites in TraceEnum_ELBO
+pyro-ppl/numpyro	2441	general tools	bug fix	fix(distributions): keep two-sided TruncatedNormal samples within bounds
+pyro-ppl/numpyro	2442	general tools	bug fix	fix(infer): preserve PRNG implementations in Predictive
+pysam-developers/pysam	1431	biology	bug fix	Allow VariantRecord POS=0 (start=-1), as used for telomeres
+Quandela/Perceval	802	physics and astronomy	bug fix	Make BSDistribution(bsd) copy the source distribution
+Quandela/Perceval	803	physics and astronomy	bug fix	Validate each iteration of a ComputationIterator
+Quandela/Perceval	804	physics and astronomy	bug fix	Set ERROR status when execute_sync fails with allow_partial_results
+Quandela/Perceval	805	physics and astronomy	bug fix	Reset the Processor source when its noise model is changed
+Quandela/Perceval	806	physics and astronomy	bug fix	Fix result insertion for a ComputationIterator without iteration
+Quandela/Perceval	807	physics and astronomy	bug fix	Fix serialization of detectors without a name
+Quandela/Perceval	808	physics and astronomy	bug fix	Keep min_detected_photons_filter(0) through experiment serialization
+Quandela/Perceval	809	physics and astronomy	speedup	Do not copy the experiment in use_phase_noise when there is no phase noise
+Quandela/Perceval	810	physics and astronomy	speedup	Compute numeric circuit unitaries by updating row blocks
+robocurve/inspect-robots	617	general tools	bug fix	Rollouts record a copy of each executed action, so a reused policy buffer can't change scores
+robocurve/inspect-robots	618	general tools	bug fix	Trial artifacts stay separate for scene IDs that differ only in case
+robocurve/inspect-robots	622	general tools	speedup	HTML report scans the frame directory once (16x faster, byte-identical)
+rowansci/openconf	19	materials and chemistry	bug fix	Heavy-atom RMSD searches symmetry mappings, so symmetric conformers compare as identical
+rowansci/openconf	20	materials and chemistry	bug fix	random_seed=0 gives reproducible conformers instead of an unseeded run
+rowansci/openconf	21	materials and chemistry	bug fix	hybrid: pick low-mode source seeds from the pool after seed insertion
+rowansci/openconf	22	materials and chemistry	bug fix	pool: apply energy_window_kcal to the final selection
+rowansci/rowan-python	19	materials and chemistry	bug fix	Scan energy positions, explicit empty pKa element lists, and folder lookup past the first page
+rowansci/steamroll	8	materials and chemistry	bug fix	Transition-metal conversions keep input atom order and supplied coordinates
+rowansci/steamroll	9	materials and chemistry	bug fix	to_rdkit: check transition-metal results against the supplied SMILES
+scikit-bio/scikit-bio	2676	biology	speedup	PERF: slice positions from stacked bytes in TabularMSA.iter_positions
+scikit-bio/scikit-bio	2677	biology	bug fix	BUG: accept a sparse basis in ilr and ilr_inv
+scikit-bio/scikit-bio	2678	biology	bug fix	BUG: drop gap columns across all sequences in AlignPath.to_indices
+scikit-bio/scikit-bio	2679	biology	bug fix	BUG: update stored IDs in OrdinationResults.rename
+scikit-bio/scikit-bio	2680	biology	bug fix	BUG: treat missing lengths as zero while climbing in root_at_midpoint
+scverse/scanpy	4531	biology	bug fix	fix: match expression layers before reusing marker statistics
+scverse/scanpy	4532	biology	bug fix	fix: keep legacy graph metrics usable without anndata.acc
+scverse/scanpy	4533	biology	bug fix	fix: derive PCA defaults from the selected representation
+scverse/scanpy	4534	biology	bug fix	fix: preserve gene pool alignment in score_genes
+seqeralabs/nf-metro	2172	biology	bug fix	Converted metro maps keep edges into dead-end processes in other sections
+seqeralabs/nf-metro	2173	biology	bug fix	Subworkflows with the same short name get separate sections instead of overwriting each other
+snap-stanford/Biomni	372	biology	bug fix	FDA adverse-event summaries count deaths and hospitalizations from the report-level flags
+snap-stanford/Biomni	373	biology	bug fix	`query_openfda` sends its search, sort, count and skip parameters
+snap-stanford/Biomni	376	biology	bug fix	Drug recall search applies the requested classification filter
+snap-stanford/Biomni	377	biology	bug fix	Adverse-event search reports FDA API errors instead of 'no adverse events found'
+snap-stanford/Biomni	378	biology	bug fix	database REST helper: timeouts and bounded GET retries
+spglib/spglib	650	materials and chemistry	bug fix	fix: preserve legacy Python error messages
+spglib/spglib	651	materials and chemistry	bug fix	fix: identify magnetic groups in oblique primitive bases
+spglib/spglib	652	materials and chemistry	bug fix	fix(fortran): forward stabilized reciprocal mesh arguments
+spglib/spglib	653	materials and chemistry	speedup	perf: prune lattice symmetry candidates by axis length
+sunpy/sunpy	8919	physics and astronomy	bug fix	Fixes CROTA fallback for EUI maps
+sunpy/sunpy	8924	physics and astronomy	bug fix	Fixes WCS construction for FITS maps with SIP distortion
+synthesizebio/pysynthbio	77	biology	bug fix	`predict_query` no longer writes its options into the caller's query dict
+tenpy/tenpy	779	physics and astronomy	bug fix	Fix MPO expectation values with supplied environments
+tenpy/tenpy	780	physics and astronomy	bug fix	Fix joint probabilities in MPS.sample_measurements
+tenpy/tenpy	781	physics and astronomy	bug fix	Fix dropping charges on grouped sites of different dimensions
+tenpy/tenpy	782	physics and astronomy	bug fix	Fix MPO construction for empty Hamiltonians
+tenpy/tenpy	783	physics and astronomy	bug fix	Preserve Jordan-Wigner parity for grouped independent charges
+teorth/optimizationproblems	227	mathematics	bug fix	C_86: improved upper bound 1.8117251* (Schur–Siegel–Smyth trace constant)
+teorth/optimizationproblems	229	mathematics	bug fix	C_82: improved upper bound 0.2534449* (essential minimum of the Zhang–Zagier height)
+teorth/optimizationproblems	239	mathematics	bug fix	C68: lower bound 0.432* for Korenblum’s constant (unrefereed)
+teorth/optimizationproblems	251	mathematics	bug fix	C42: upper bound 0.6888863712* for Turan's pure power-sum constant (unrefereed)
+teorth/optimizationproblems	258	mathematics	bug fix	C44: upper bound 4.3576549226* via a degree-three local-weight cap (unrefereed)
+teorth/optimizationproblems	259	mathematics	bug fix	C70: finite lower bound 1.20194336* and cube-ball limit exp(1/(2e)) (unrefereed)
+teorth/optimizationproblems	294	mathematics	bug fix	C44: candidate upper bound 1.9916994577* with R4 = 22, R6 <= 107 and R7 <= 227 (unrefereed)
+teorth/optimizationproblems	298	mathematics	bug fix	C86: upper bound 1.8054939963* with a refined rational density (unrefereed; AI-checked, no human review)
+teorth/optimizationproblems	299	mathematics	bug fix	C68: candidate lower bound 0.447* via a contact-row moment lemma (unrefereed)
+teorth/optimizationproblems	300	mathematics	bug fix	C10a: record Heilman-Jones-Malavolta 1.773 and Peng 1.77987164 (not my bounds)
+teorth/optimizationproblems	301	mathematics	bug fix	C82: upper bound 0.253091834* with new degree-44 denominators (unrefereed)
+teorth/optimizationproblems	305	mathematics	bug fix	42a: upper bound 0.6863607950* on Bakeas's Theorem A (unrefereed)
+teorth/optimizationproblems	306	mathematics	bug fix	91a: lower bound 0.265988* by canonical alignments, forbidden words and Walsh statistics (unrefereed)
+teorth/optimizationproblems	307	mathematics	bug fix	89b: upper bound 0.001648970526* by a binary Cayley step graphon (unrefereed)
+teorth/optimizationproblems	308	mathematics	bug fix	89c: lower bound 0.000033123924116* by exact flag-algebra certificates (unrefereed)
+teorth/optimizationproblems	310	mathematics	bug fix	42a: explicit value 1/2 + 2^-4096* for Biró's strict lower bound (unrefereed)
+teorth/optimizationproblems	311	mathematics	bug fix	C57c: record Wikström's bounds and a candidate unrefereed 0.61230* lower bound
+teorth/optimizationproblems	317	mathematics	bug fix	C30: add candidate 10.42* lower bound conditional on Norton v3 (stacked on #313)
+teorth/optimizationproblems	321	mathematics	bug fix	C47: record Tomar's bounds and a candidate unrefereed 1.70311* lower bound
+teorth/optimizationproblems	324	mathematics	bug fix	C22b: candidate unrefereed upper bound 7.090412* via unequal superhelices
+teorth/optimizationproblems	328	mathematics	bug fix	C38: add candidate unrefereed 2.6275696* lower bound from span-18 bridges
+teorth/optimizationproblems	330	mathematics	bug fix	C82: candidate upper bound 0.2519696460* from a joint degree-104 certificate built on #280 v3, v4 and v5 (unrefereed)
+teorth/optimizationproblems	347	mathematics	bug fix	C22b: candidate limiting bound 7.087559024* (stacked on #342)
+teorth/optimizationproblems	350	mathematics	bug fix	C47: candidate lower bound 1.7055913150* (stacked on #341)
+teorth/optimizationproblems	370	mathematics	bug fix	49a: candidate lower bound 1.5678643* from a 252303-set two-pendant block (Koshta's block, 21 sets replaced by 32)
+teorth/optimizationproblems	373	mathematics	bug fix	8a: C8 = 2/log γ_1, a corollary of OpenAI's 7/8 quasi-Riemann hypothesis
+tskit-dev/msprime	2554	biology	bug fix	Record SLiM mutation model parameters before simulation
+tskit-dev/msprime	2555	biology	bug fix	Preserve initial tables when adding populations
+tskit-dev/msprime	2556	biology	bug fix	Preserve population IDs in ancestry provenance
+tskit-dev/tskit	3510	biology	bug fix	Stabilize trait correlation across trait scales
+tskit-dev/tskit	3511	biology	bug fix	Preserve edge and migration metadata when trimming
+tskit-dev/tskit	3512	biology	bug fix	Use the converted site mask when validating VCF positions
+tskit-dev/tskit	3513	biology	speedup	Avoid per-site copies when writing VCF
+tskit-dev/tskit	3514	biology	bug fix	Apply NEXUS node labels to alignment rows
