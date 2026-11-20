@@ -228,3 +228,5 @@ tskit-dev/tskit	3511	biology	bug fix	Preserve edge and migration metadata when t
 tskit-dev/tskit	3512	biology	bug fix	Use the converted site mask when validating VCF positions
 tskit-dev/tskit	3513	biology	speedup	Avoid per-site copies when writing VCF
 tskit-dev/tskit	3514	biology	bug fix	Apply NEXUS node labels to alignment rows
+laminlabs/readfcs	50	biology	bug fix	Read FCS files that have channel names but no marker names ($PnS)
+pymzml/pymzML	420	biology	bug fix	Iterating a Reader after run[id] no longer raises ParseError

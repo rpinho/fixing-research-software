@@ -30,11 +30,11 @@ Minor defects are included in the confirmed counts. Reports preserve the limits 
 Every pull request I opened on someone else's research code, rendered from the GitHub API by `tools/render_prs.py` and refreshed daily. Bug fixes were confirmed by a referee from a different model family, with a test that fails before the fix; speedups were checked for identical outputs. "Replies" counts maintainers' comments and reviews, not bots.
 
 <!-- auto:prs -->
-229 PRs to 61 repositories: 25 merged, 185 open, 19 closed.
+231 PRs to 63 repositories: 29 merged, 183 open, 19 closed.
 
 ### Biology
 
-102 PRs to 32 repositories: 12 merged, 88 open, 2 closed.
+104 PRs to 34 repositories: 14 merged, 88 open, 2 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1038](https://github.com/biotite-dev/biotite/pull/1038) | bug fix | Reject GRO stacks with unequal model lengths | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1039](https://github.com/biotite-dev/biotite/pull/1039) | bug fix | Fix GFF annotation grouping for discontinuous features | open |
 | [biotite-dev/biotite](https://github.com/biotite-dev/biotite) | [#1040](https://github.com/biotite-dev/biotite/pull/1040) | bug fix | Fix `to_sequence()` chain selection for atom array stacks | open |
-| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | bug fix | Merging A3M files from the same database keeps every file's hits | open |
+| [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#437](https://github.com/chaidiscovery/chai-lab/pull/437) | bug fix | Merging A3M files from the same database keeps every file's hits | merged 2026-11-19 |
 | [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) | [#438](https://github.com/chaidiscovery/chai-lab/pull/438) | bug fix | Template lookup keeps chain names like 001 or NA as strings | open |
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#434](https://github.com/daler/pybedtools/pull/434) | bug fix | preserve input rows when indexing presorted files | open |
 | [daler/pybedtools](https://github.com/daler/pybedtools) | [#435](https://github.com/daler/pybedtools/pull/435) | bug fix | fix generator completion in randomstats | open |
@@ -100,9 +100,9 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [nf-core/tools](https://github.com/nf-core/tools) | [#4620](https://github.com/nf-core/tools/pull/4620) | bug fix | Schema build keeps 0 and 0.0 defaults from the pipeline config | merged 2026-11-18 |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1637](https://github.com/nipy/nibabel/pull/1637) | bug fix | BF: Use output position when slicing frames of an ECAT array proxy | open, 1 reply |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1638](https://github.com/nipy/nibabel/pull/1638) | bug fix | BF: Read AFNI complex sub-bricks as complex64 | merged 2026-11-19 |
-| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1639](https://github.com/nipy/nibabel/pull/1639) | bug fix | BF: Reverse slice timing when reorientation flips the slice axis | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1639](https://github.com/nipy/nibabel/pull/1639) | bug fix | BF: Reverse slice timing when reorientation flips the slice axis | merged 2026-11-19 |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1640](https://github.com/nipy/nibabel/pull/1640) | speedup | ENH: Write TCK streamlines in blocks when no affine needs applying | open |
-| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1641](https://github.com/nipy/nibabel/pull/1641) | bug fix | BF: Accept MGH files with an intent code in the version field | open |
+| [nipy/nibabel](https://github.com/nipy/nibabel) | [#1641](https://github.com/nipy/nibabel/pull/1641) | bug fix | BF: Accept MGH files with an intent code in the version field | open, 1 reply |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1642](https://github.com/nipy/nibabel/pull/1642) | bug fix | BF: Align annotation names with colour table rows when entries are missing | open |
 | [nipy/nibabel](https://github.com/nipy/nibabel) | [#1643](https://github.com/nipy/nibabel/pull/1643) | bug fix | BF: Reshape GIFTI MatrixData to 4x4 when values are on one line | merged 2026-11-19 |
 | [NVIDIA-BioNeMo/bionemo-recipes](https://github.com/NVIDIA-BioNeMo/bionemo-recipes) | [#1802](https://github.com/NVIDIA-BioNeMo/bionemo-recipes/pull/1802) | bug fix | ESM-2 PEFT validation packing uses val_micro_batch_size | open |
@@ -140,10 +140,12 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3512](https://github.com/tskit-dev/tskit/pull/3512) | bug fix | Use the converted site mask when validating VCF positions | open, 2 replies |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3513](https://github.com/tskit-dev/tskit/pull/3513) | speedup | Avoid per-site copies when writing VCF | closed |
 | [tskit-dev/tskit](https://github.com/tskit-dev/tskit) | [#3514](https://github.com/tskit-dev/tskit/pull/3514) | bug fix | Apply NEXUS node labels to alignment rows | merged 2026-11-19 |
+| [laminlabs/readfcs](https://github.com/laminlabs/readfcs) | [#50](https://github.com/laminlabs/readfcs/pull/50) | bug fix | Read FCS files that have channel names but no marker names ($PnS) | open |
+| [pymzml/pymzML](https://github.com/pymzml/pymzML) | [#420](https://github.com/pymzml/pymzML/pull/420) | bug fix | Iterating a Reader after run[id] no longer raises ParseError | open |
 
 ### Physics and astronomy
 
-53 PRs to 14 repositories: 5 merged, 43 open, 5 closed.
+53 PRs to 14 repositories: 7 merged, 41 open, 5 closed.
 
 | Repo | PR | Type | What it does | Status |
 | --- | --- | --- | --- | --- |
@@ -180,17 +182,17 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1330](https://github.com/LSSTDESC/CCL/pull/1330) | bug fix | Fix comoving volume in curved cosmologies | open |
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1331](https://github.com/LSSTDESC/CCL/pull/1331) | bug fix | Include fc_bar in Duffy08 equality and representation | open |
 | [LSSTDESC/CCL](https://github.com/LSSTDESC/CCL) | [#1332](https://github.com/LSSTDESC/CCL/pull/1332) | bug fix | Fix fourth-profile bias in the two-halo trispectrum | open |
-| [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4240](https://github.com/openmc-dev/openmc/pull/4240) | bug fix | Reshape each mesh filter along its expanded axes | open |
+| [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4240](https://github.com/openmc-dev/openmc/pull/4240) | bug fix | Reshape each mesh filter along its expanded axes | open, 1 reply |
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4241](https://github.com/openmc-dev/openmc/pull/4241) | bug fix | Read matrix rotations from mesh filters through the C API | merged 2026-11-19 |
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4242](https://github.com/openmc-dev/openmc/pull/4242) | bug fix | Scale shared mesh sources once when setting total strength | merged 2026-11-19 |
 | [openmc-dev/openmc](https://github.com/openmc-dev/openmc) | [#4243](https://github.com/openmc-dev/openmc/pull/4243) | bug fix | Preserve mesh identity and transformations when comparing filters | merged 2026-11-19 |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#802](https://github.com/Quandela/Perceval/pull/802) | bug fix | Make BSDistribution(bsd) copy the source distribution | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#803](https://github.com/Quandela/Perceval/pull/803) | bug fix | Validate each iteration of a ComputationIterator | open, 1 reply |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#804](https://github.com/Quandela/Perceval/pull/804) | bug fix | Set ERROR status when execute_sync fails with allow_partial_results | open, 1 reply |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#805](https://github.com/Quandela/Perceval/pull/805) | bug fix | Reset the Processor source when its noise model is changed | open, 2 replies |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#805](https://github.com/Quandela/Perceval/pull/805) | bug fix | Reset the Processor source when its noise model is changed | merged 2026-11-20 |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#806](https://github.com/Quandela/Perceval/pull/806) | bug fix | Fix result insertion for a ComputationIterator without iteration | open |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#807](https://github.com/Quandela/Perceval/pull/807) | bug fix | Fix serialization of detectors without a name | closed |
-| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | open, 1 reply |
+| [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#808](https://github.com/Quandela/Perceval/pull/808) | bug fix | Keep min_detected_photons_filter(0) through experiment serialization | merged 2026-11-20 |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#809](https://github.com/Quandela/Perceval/pull/809) | speedup | Do not copy the experiment in use_phase_noise when there is no phase noise | merged 2026-11-19 |
 | [Quandela/Perceval](https://github.com/Quandela/Perceval) | [#810](https://github.com/Quandela/Perceval/pull/810) | speedup | Compute numeric circuit unitaries by updating row blocks | merged 2026-11-19 |
 | [sunpy/sunpy](https://github.com/sunpy/sunpy) | [#8919](https://github.com/sunpy/sunpy/pull/8919) | bug fix | Fixes CROTA fallback for EUI maps | closed |
@@ -216,7 +218,7 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4793](https://github.com/materialsproject/pymatgen/pull/4793) | bug fix | Normalize data["volume"] per formula unit in InsertionVoltagePair | closed |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4794](https://github.com/materialsproject/pymatgen/pull/4794) | bug fix | Fix get_dimensionality_cheon modifying the input structure when standardize=False | closed |
 | [materialsproject/pymatgen](https://github.com/materialsproject/pymatgen) | [#4795](https://github.com/materialsproject/pymatgen/pull/4795) | bug fix | Return "intercalated ion" from get_dimensionality_cheon with larger_cell=True | closed |
-| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open, 1 reply |
+| [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1118](https://github.com/phonopy/phonopy/pull/1118) | bug fix | Fix empty arguments in deprecated option name handling | open, 2 replies |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1119](https://github.com/phonopy/phonopy/pull/1119) | bug fix | Fix loading YAML with a NumPy primitive matrix | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1120](https://github.com/phonopy/phonopy/pull/1120) | bug fix | Preserve symbol distinction when replicating Phonopy | open |
 | [phonopy/phonopy](https://github.com/phonopy/phonopy) | [#1121](https://github.com/phonopy/phonopy/pull/1121) | speedup | Speed up thermal displacements by batching mode populations | open |
@@ -266,7 +268,7 @@ Every pull request I opened on someone else's research code, rendered from the G
 | [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems) | [#347](https://github.com/teorth/optimizationproblems/pull/347) | bug fix | C22b: candidate limiting bound 7.087559024* (stacked on #342) | open |
 | [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems) | [#350](https://github.com/teorth/optimizationproblems/pull/350) | bug fix | C47: candidate lower bound 1.7055913150* (stacked on #341) | open, 2 replies |
 | [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems) | [#370](https://github.com/teorth/optimizationproblems/pull/370) | bug fix | 49a: candidate lower bound 1.5678643* from a 252303-set two-pendant block (Koshta's block, 21 sets replaced by 32) | open, 1 reply |
-| [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems) | [#373](https://github.com/teorth/optimizationproblems/pull/373) | bug fix | 8a: C8 = 2/log γ_1, a corollary of OpenAI's 7/8 quasi-Riemann hypothesis | open |
+| [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems) | [#373](https://github.com/teorth/optimizationproblems/pull/373) | bug fix | 8a: C8 = 2/log γ_1, a corollary of OpenAI's 7/8 quasi-Riemann hypothesis | open, 1 reply |
 
 ### General tools
 
